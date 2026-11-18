@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ========== SİTE ADI: Sekmede görünen isim, buradan değiştir ========== -->
+  <title>SİTE ADI</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #1a1a1a;
+      min-height: 100vh;
+    }
+
+    header {
+      display: flex;
+      justify-content: flex-end; /* site adı sağ üstte */
+      align-items: center;
+      padding: 20px 30px;
+    }
+
+    .site-adi {
+      color: #ffffff;
+      font-size: 26px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .galeri {
+      display: grid;
+      grid-template-columns: 1fr 1fr; /* 2'şerli sıra */
+      gap: 20px;
+      padding: 20px 30px 40px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .galeri a {
+      display: block;
+      overflow: hidden;
+      border-radius: 12px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .galeri a:hover {
+      transform: scale(1.02);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+    }
+
+    .galeri img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <!-- ========== SİTE ADI (sağ üstte görünen): aşağıdaki yazıyı değiştir ========== -->
+    <div class="site-adi">SİTE ADI</div>
+  </header>
+
+  <main class="galeri">
+    <a href="fotolar/43624.jpg" download="43624.jpg"><img src="fotolar/43624.jpg" alt=""></a>
+    <a href="fotolar/43618.jpg" download="43618.jpg"><img src="fotolar/43618.jpg" alt=""></a>
+    <a href="fotolar/43614.jpg" download="43614.jpg"><img src="fotolar/43614.jpg" alt=""></a>
+    <a href="fotolar/43159.jpg" download="43159.jpg"><img src="fotolar/43159.jpg" alt=""></a>
+    <a href="fotolar/42866.jpg" download="42866.jpg"><img src="fotolar/42866.jpg" alt=""></a>
+    <a href="fotolar/42861.jpg" download="42861.jpg"><img src="fotolar/42861.jpg" alt=""></a>
+    <a href="fotolar/42838.jpg" download="42838.jpg"><img src="fotolar/42838.jpg" alt=""></a>
+    <a href="fotolar/42837.jpg" download="42837.jpg"><img src="fotolar/42837.jpg" alt=""></a>
+    <a href="fotolar/42761.jpg" download="42761.jpg"><img src="fotolar/42761.jpg" alt=""></a>
+  </main>
+
+</body>
+</html>
